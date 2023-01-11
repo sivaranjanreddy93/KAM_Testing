@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20230103 14:46:21.541" rpa="false" schemaversion="3">
+<suite id="s1" name="Com" source="C:\Users\Sivaranjanreddy.V\Searches\hi\com.robot">
+<test id="s1-t1" name="test2" line="19">
+<kw name="hello1">
+<var>${output1}</var>
+<arg>a2</arg>
+<kw name="Ram 1" library="sample1">
+<var>${output1}</var>
+<arg>a2</arg>
+<msg timestamp="20230103 14:46:22.524" level="FAIL">FileNotFoundError: [Errno 2] No such file or directory: 'hi.txt'</msg>
+<status status="FAIL" starttime="20230103 14:46:22.524" endtime="20230103 14:46:22.534"/>
+</kw>
+<status status="FAIL" starttime="20230103 14:46:22.524" endtime="20230103 14:46:22.534"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${output1}</arg>
+<arg>${0}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" starttime="20230103 14:46:22.534" endtime="20230103 14:46:22.534"/>
+</kw>
+<status status="FAIL" starttime="20230103 14:46:22.524" endtime="20230103 14:46:22.534">FileNotFoundError: [Errno 2] No such file or directory: 'hi.txt'</status>
+</test>
+<status status="FAIL" starttime="20230103 14:46:21.558" endtime="20230103 14:46:22.534"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Com">Com</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
